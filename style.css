@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@font-face {
+	font-family: "Norse Bold";
+	src: url("./Norse-Bold.otf");
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	min-height: 100vh;
+}
+
+.container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.image {
+	position: relative;
+}
+
+.display-img {
+	height: 100vh;
+}
+
+.credits {
+	color: white;
+	font-size: 13px;
+	position: absolute;
+	text-align: center;
+	padding: 5px 10px;
+	width: calc(100% - 20px);
+	bottom: 0;
+	background-color: rgba(116, 108, 98, 0.5);
+}
+
+.logo {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	bottom: 50%;
+	width: calc(100% - 20px);
+	padding: 10px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Norse Bold";
+	font-size: 75px;
+}
+
+.logo > img {
+	height: 125px;
+}
+
+.credits a {
+	color: bisque;
+}
+
+.content {
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+form fieldset {
+	border: none;
+}
+
+form fieldset legend {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+form label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+form input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 3px 6px;
+    font-size: 15px;
+}
+
+form input:focus {
+    border: 1px solid rgba(148, 96, 70, 1);
+}
+
+
+
+table {
+	width: 100%;
+}
+input {
+	width: 100%;
+}
+
+td {
+	padding: 5px 20px;
+}
+
+form table tr td:first-child {
+	padding-left: 0;
+}
+
+form table tr td:last-child {
+	padding-right: 0;
+}
+
+form button {
+	background-color: rgb(148, 96, 70);
+	color: white;
+	cursor: pointer;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 28px;
+	transition: background-color 500ms;
+	transition: color 500ms;
+	transition: transform 200ms ease-in-out;
+}
+
+form button:hover {
+	background-color: rgb(254, 228, 191);
+	color: black;
+	transform: scale(1.05);
+}

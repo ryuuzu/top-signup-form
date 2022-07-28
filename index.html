@@ -7,10 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 
 <body>
-    
+    <div class="container">
+        <div class="image">
+            <img src="./tom-barrett-M0AWNxnLaMw-unsplash.jpg" alt="airplane on sky during golden hour photo"
+                class="display-img">
+            <div class="logo">
+                <img src="./odin-lined.png" alt="Odin lined logo">
+                Odin Travels
+            </div>
+            <figcaption class="credits">Photo by <a
+                    href="https://unsplash.com/@wistomsin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tom
+                    Barrett</a> on <a
+                    href="https://unsplash.com/s/photos/travel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </figcaption>
+
+        </div>
+        <div class="content">
+            <div class="main-text">
+                <h3>Have you ever thought of travelling freely across? If you have then, Sign up <em>now</em> to get
+                    started. And get free $100 credit on your first travel.</h3>
+                <h2>You <em>know</em> you want to.</h2>
+            </div>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <table>
+                        <tr>
+                            <td><label for="fname">First Name:</label>
+                                <br>
+                                <input type="text" name="fname" id="fname" />
+                            </td>
+                            <td><label for="lname">Last Name:</label>
+                                <br>
+                                <input type="text" name="lname" id="lname" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                                <br>
+                                <input type="email" name="email" id="email" />
+                            </td>
+                            <td>
+                                <label for="phnum">Phone Number:</label>
+                                <br>
+                                <input type="number" max="10000000000" min="9000000000" name="phnum" id="phnum" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Password:</label>
+                                <br>
+                                <input type="password" name="password" id="password" />
+                            </td>
+                            <td><label for="confpassword">Confirm Password:</label>
+                                <br>
+                                <input type="password" name="confpassword" id="confpassword" />
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <button type="submit">Create Account</button><div class="end-content">
+                    Already have an account? <a href="#">Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
